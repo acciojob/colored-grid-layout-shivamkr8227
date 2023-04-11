@@ -10,6 +10,7 @@
 	"a2 a5 a5 a6"
 	"a2 a7 a8 a9"
 	"a2 a10 a10 a10";
+	text-align:center;
 }
 .a1, .a2, .a3, .a4, .a5, .a6, .a7, .a8, .a9, .a10{
 	background-color:green;
@@ -19,7 +20,7 @@
 .a1{
 	grid-area:a1;
 }
-.conainer > div:nth-child(2){
+.a2{
 	grid-area:a2;
 }
 .a3{
@@ -45,4 +46,23 @@
 }
 .a10{
 	grid-area:a10;
+}
+
+@media only screen and (max-width:550px)
+{
+	.container{
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 0.5fr 0.5fr 1fr 1fr 1fr 0.7fr 0.4fr 1fr 1fr;
+		grid-template-areas:
+		"a1"
+		"a2"
+		"a3"
+		"a4"
+		"a5"
+		"a6"
+		"a7"
+		"a8"
+		"a9"
+		"a10";
+	}
 }
