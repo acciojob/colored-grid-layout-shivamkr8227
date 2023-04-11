@@ -17,7 +17,7 @@
 }
 
 
-.a1{
+.containter>div:nth-child(1){
 	grid-area:a1;
 }
 .a2{
